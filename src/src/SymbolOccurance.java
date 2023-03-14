@@ -5,14 +5,18 @@ public class SymbolOccurance {
         System.out.print("Input string: ");
         Scanner scan = new Scanner(System.in);
         String s = scan.nextLine();
-
-        System.out.println("How many times: " + count(s, 'q'));
-
+        System.out.println("How many times: " + findSymbolOccurance(s, 'q'));
 
     }
 
-    private static long count(String s, char c){
-        return s.chars().filter(x->x==c).count();
+    public static int findSymbolOccurance(String input, char symbol) {
+        int count = 0;
+        for (int i = 0; i < input.length(); i++) {
+            if (input.charAt(i) == symbol) {
+                count++;
+            }
+        }
+        return count;
     }
 
 }

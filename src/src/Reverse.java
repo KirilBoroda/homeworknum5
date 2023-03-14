@@ -1,18 +1,14 @@
 public class Reverse {
 
-    public static StringBuilder reverse(String source){
-        String s1 = source;
-        StringBuilder s = new StringBuilder();
-        s.append(s1);
+    public static String reverse(String source) {
+        StringBuilder s = new StringBuilder(source);
         s.reverse();
 
-
-        return s;
+        return s.toString();
     }
 
-
     public static void main(String[] args) {
-        String text = "my name Kyryl";
-        System.out.println(reverse(text));
+        String source = "my name Kyryl";
+        System.out.println(reverse(source));
     }
 }
