@@ -12,6 +12,5 @@ public class Palindrom {
     public static void main(String[] args) {
         String s = "KAYAK";
         System.out.println(isPalindrome(s) ? "YES" : "NO");
-
     }
 }
